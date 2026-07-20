@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <style>
+            #small-ico{
+                border : 1px solid black;
+                width: 50px;
+                height: 50px;
+            }
+            .zoom-ico{
+                width :300px;
+                height:300px;
+                border : 5px solid black;
+                transition:0.3s ease;
+                cursor:pointer
+
+            }
+            img:hover{
+              transform:scale(10)
+            }
+            body{
+                background-color: antiquewhite;
+                 height: 100vh;
+                 display:flex;
+                 justify-content: center;
+                 align-items:center;
+            }
+            .wrap{
+                background-color: rgb(255, 240, 127);
+                padding: 20px;
+                border : 3px solid blue;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "wrap">
+        <table>
+            <tr><td>
+                <img src = "image1.jpeg" id = "small-ico" class = "zoom-ico" alt="Picture1">
+            </td>
+            <td>
+                <img src = "image2.jpeg" id = "small-ico" class = "zoom-ico" alt="Picture1">
+            </td>
+            <td>
+                <img src = "picture3.jpeg" id = "small-ico" class = "zoom-ico" alt="Picture1">
+            </td>
+        </tr>
+        </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> slider</title>
+        <style>
+            body {
+                background-color:rgb(64, 176, 216);
+                margin:Opx
+            }
+            h1{
+                text-align:center;
+                color:navy;
+
+            }
+            h1::before{
+                content: "💓";
+            }
+             h1::after{
+                content: "💓";
+            }
+            .contactme{
+              
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);  
+                background-color: rgb(29, 166, 166, 0.4);
+                width: 400px;
+                padding: 20px;
+                text-align: center;
+                border :5px solid navy;
+                border-radius:20px;
+            }
+            input[type=submit]{
+                background-color: navy;
+                color:white;
+                font-size: 20px;
+                padding: 10px;
+                width: 100px;
+            }
+            input:focus{
+                background-color:grey;
+             }
+            textarea:focus{
+                background-color: grey;
+            }
+            input[type=submit]:hover{
+                background-color: orangered;
+                color:black;
+                font-size: 20px;
+                padding: 10px;
+                width: 50%;
+            }
+           
+         
+        </style>
+    </head>
+    <body>
+      <div class = "contactme">
+        <form name = "contactform">
+            <h1>CONTACT FORM</h1>
+            <label for = "fname">
+                Firstname
+            </label>
+            <input type = text name="fname"><br><br>
+             <label for = "Email">
+               Email
+            </label>
+            <input type = email name = "email"><br><br>
+            <label for = "query">
+                Queries
+            </label>
+            <textarea name = "query" rows = 10 columns=100></textarea><br><br>
+            <input type = "submit">
+        </form>
+      </div>
+    </body>
+</html>

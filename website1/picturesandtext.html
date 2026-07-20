@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pictures With Text</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h2>My Picture Gallery</h2>
+
+<div class="gallery">
+
+    <div class="item">
+        <img src="image1.jpeg" alt="Picture 1">
+        <div class="caption">This is picture number 1.</div>
+    </div>
+
+    <div class="item">
+        <img src="image2.jpeg" alt="Picture 2">
+        <div class="caption">A description about picture 2.</div>
+    </div>
+
+    <div class="item">
+        <img src="picture3.jpeg" alt="Picture 3">
+        <div class="caption">This is the text for picture 3.</div>
+    </div>
+
+    <div class="item">
+        <img src="pizza.jpg" alt="Picture 4">
+        <div class="caption">Another caption for picture 4.</div>
+    </div>
+
+</div>
+
+</body>
+</html>

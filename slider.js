@@ -3,7 +3,7 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("myslides");
 
-  for (i = 0; i < x.length; i++) {``
+  for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
 
@@ -14,6 +14,6 @@ function carousel() {
 
   x[index - 1].style.display = "block";
 
-  setTimeout(carousel, 1000);
+  setTimeout(carousel, 5000);
 }
 carousel(); // Start the carousel when the page loads

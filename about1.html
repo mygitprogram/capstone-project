@@ -11,9 +11,10 @@
             .topnav{
                 overflow :hidden;
                 background-color: black;
+                
             }
             .topnav a{
-                float : left;
+                float : right;
                 color :deeppink;
                 text-align: center;
                 padding : 14px 16px;
@@ -21,22 +22,68 @@
                 font-size: 17px;
             }
             .topnav a:hover{
-                background-color: blueviolet;
-                color:deepskyblue;
+                color: blueviolet;
+                font-size:19px;
+                
             }
             .topnav a.active {
-                background-color:  yellowgreen;
-                color :darkcyan;
-
+                color :white;
+            }
+            img {
+                border : 5px solid brown;
+                width : 300px;
+                height : 300px;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                text-transform: capitalize;
+                color : darkolivegreen;
+            }
+            .carousel-container{
+                display :flex;
+                justify-content: center;
+                align-items:center;
+            }
+            .myslides{
+                display:none;
+                max-height: 100%;
+                max-width: 100%;
             }
         </style>
     </head>
     <body>
         <div class = "topnav">
-            <a href = "index.html">home</a>
-            <a href = "about1.html" class = "active">about</a>
-            <a href = "contact.html">contact</a>
-            <a href = "gallery.html">gallery</a>
+            <a href = "index.html class = "active">Home</a>
+            <a href = "about1.html" >About</a>
+            <a href = "contact.html">Contact</a>
+            <a href = "gallery.html">Gallery</a>
         </div>
+        <h1> Natural Scenary</h1>
+        <div class = "carousel-container">
+            <img class = "myslides" src = "picture1.jpeg" alt =slide1>
+             <img class = "myslides" src = "picture2.jpeg" alt =slide2>
+              <img class = "myslides" src = "picture3.jpeg" alt =slide3>
+        </div>
+        <script>
+        var index = 0;
+
+function carousel(){
+    var i;
+    var x = document.getElementsByClassName("myslides")
+    for (i=0;i<x.length;i++)
+    {
+        x[i].style.display = "none"
+    }
+    index++;
+    if (index >x.length){
+        index = 1
+    }
+    x[index-1].style.display = "block";
+    setTimeout(carousel,3000)
+
+}
+carousel()
+</script>
     </body>
 </html>

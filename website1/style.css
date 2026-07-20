@@ -8,7 +8,7 @@ body{
   background-color: #0f0f0f;
 }
 .topnav a{
-  float: left;
+  float: right;
   color: deeppink;
   text-align: center;
   padding: 14px 16px;
